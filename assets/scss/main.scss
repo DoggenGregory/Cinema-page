@@ -1,0 +1,195 @@
+@font-face { font-family: pricedown; src: url('../fonts/pricedown\ bl.ttf'); } 
+@font-face { font-family: greg; src: url('../fonts/greg\ bl.ttf'); } 
+
+$backcolor : rgba(7, 8, 19, 0.753);
+$hovercolor: rgb(28, 28, 59);
+
+
+
+@mixin button() {
+    text-align: center;
+    background-color:$backcolor;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    padding: 10px 0px;
+    width: 100px;
+    margin:25px;
+    border-radius: 10px;
+    top:15px;
+    border: rgb(83, 73, 117) 3px solid;
+    
+    &:hover{
+        background-color:$hovercolor;
+        border-radius: 14px;
+        color:rgb(157, 140, 255);
+               
+    }
+}
+
+.backgroundimg{
+    background-color:black ;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100vw;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: auto auto auto ;
+
+}
+
+.title{
+    text-align: center;
+
+    grid-column: 2/3;
+    grid-row:1/1;
+    font-size: 6em;
+    font-family: pricedown;
+    color : white;
+    padding:15px;
+    padding-bottom: 25px;
+    text-shadow: 2px 2px black;
+    background-color: $backcolor;
+    border-radius: 35px;
+
+}
+.text{
+    font-size: 1.5em;
+    color:rgb(255, 255, 255);
+    text-align: center ;  
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: $backcolor;
+    border-radius: 15px;
+    
+}
+.flexbox1{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.flexbox{
+    grid-column: 2/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+
+.button1{
+
+    @include button();
+}
+.button2{
+    @include button();
+
+}
+.button3{
+    @include button();
+
+}
+
+
+.reclamen{
+    display:flex;
+    justify-content: center;
+
+    i{
+        color: gray;
+        font-size:5em;
+        color:rgba(5, 0, 27, 0.897);
+        text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+        margin:7px;
+        margin-top:150px;
+
+
+    }
+}
+.flexcontanermovies{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .movie{
+
+
+        img{
+            margin :0 45px ;
+            max-height: 200px;
+            max-width: 200px;
+    
+        }
+    }
+
+}
+
+/* :::::::::::::::::::::::::contancts::::::::::::::::::::::: */
+
+
+.containercontact{
+    display: grid;
+    grid-template-columns: 40% auto;
+    color: blanchedalmond;
+    background-color: grey;
+
+
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(27, 24, 43);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:$hovercolor;
+  }
+  
+  .divcont {
+    border-radius: 5px;
+    background-color: $backcolor;
+    padding: 20px;
+  }
+
+
+}
+.containerabout{
+    grid-column: 2/3;
+    margin : 35px;
+    padding :5px;
+    background-color: rgb(54, 54, 54);
+    border-radius:15px;
+    
+
+
+    p{  
+
+        color: white;
+    }
+}
