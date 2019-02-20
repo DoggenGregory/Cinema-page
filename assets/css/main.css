@@ -131,10 +131,20 @@
   flex-wrap: nowrap;
   justify-content: center;
 }
+.flexcontanermovies .movie {
+  text-align: center;
+}
 .flexcontanermovies .movie img {
   margin: 0 45px;
   max-height: 200px;
   max-width: 200px;
+}
+.flexcontanermovies .movie img:hover {
+  max-height: 300px;
+  max-width: 300px;
+}
+.flexcontanermovies .movie .movietext {
+  color: white;
 }
 
 /* :::::::::::::::::::::::::contancts::::::::::::::::::::::: */
@@ -142,7 +152,7 @@
   display: grid;
   grid-template-columns: 40% auto;
   color: blanchedalmond;
-  background-color: grey;
+  background-color: rgba(7, 8, 19, 0.753);
 }
 .containercontact input[type=text], .containercontact select {
   width: 100%;
@@ -176,7 +186,7 @@
   grid-column: 2/3;
   margin: 35px;
   padding: 5px;
-  background-color: #363636;
+  background-color: rgba(7, 8, 19, 0.753);
   border-radius: 15px;
 }
 .containerabout p {

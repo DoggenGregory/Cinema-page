@@ -121,13 +121,25 @@ $hovercolor: rgb(28, 28, 59);
     justify-content: center;
 
     .movie{
+        text-align: center;
 
 
         img{
             margin :0 45px ;
             max-height: 200px;
             max-width: 200px;
+
+            &:hover{
+                max-height: 300px;
+                max-width: 300px;
     
+            }
+    
+        }
+
+        .movietext{
+            color:white;
+
         }
     }
 
@@ -140,7 +152,7 @@ $hovercolor: rgb(28, 28, 59);
     display: grid;
     grid-template-columns: 40% auto;
     color: blanchedalmond;
-    background-color: grey;
+    background-color:$backcolor;
 
 
 
@@ -183,7 +195,7 @@ input[type=text], select {
     grid-column: 2/3;
     margin : 35px;
     padding :5px;
-    background-color: rgb(54, 54, 54);
+    background-color: $backcolor;
     border-radius:15px;
     
 
